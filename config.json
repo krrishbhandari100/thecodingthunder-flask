@@ -1,0 +1,12 @@
+{
+    "params":{
+        "heading": "TheCodingThunder",
+        "sub-heading": "A Blog liked by programmers",
+        "about-sub-heading": "This is what I do.",
+        "contact-sub-heading": "Have questions? I have answers.",
+        "about-heading": "About Me",
+        "contact-heading": "Contact Me",
+        "admin-user": "admin",
+        "admin-password": "admin"
+    }
+}
