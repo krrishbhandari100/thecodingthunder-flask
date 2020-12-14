@@ -124,7 +124,7 @@ def NewPost():
             post_posted_by = request.form["post_posted_by"]
             post_desc = request.form["post_desc"]
             stime = datetime.now()
-            post_add = Postss(post_titile=post_title, post_posted_by=post_posted_by, post_desc=post_desc, stime=stime)
+            post_add = Postss(post_title=post_title, post_posted_by=post_posted_by, post_desc=post_desc, stime=stime)
             db.session.add(post_add)
             db.session.commit()
             return redirect("/dashboard")
