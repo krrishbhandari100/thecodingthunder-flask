@@ -131,5 +131,6 @@ def NewPost():
     else:
         return redirect('/dashboard')
     return render_template("npost.html", params=params)
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(port=8000, debug=True)
