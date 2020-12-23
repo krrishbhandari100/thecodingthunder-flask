@@ -7,6 +7,7 @@
         "about-heading": "About Me",
         "contact-heading": "Contact Me",
         "admin-user": "admin",
-        "admin-password": "admin"
+        "admin-password": "admin",
+        "dashboard-image": "/static/img/images.jfif"
     }
 }
