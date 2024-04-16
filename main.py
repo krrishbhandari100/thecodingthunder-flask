@@ -7,7 +7,7 @@ with open("config.json") as c:
     params = json.load(c)["params"]
 app = Flask("krrish-app")
 app.config["SECRET_KEY"] = "Y-%S6#^CLJt%*gv_uY-%S6#^CLJt%*gv_u"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/thecodingthunder'
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///thecodingthunder.db"
 db = SQLAlchemy(app)
 
 class Postss(db.Model):
@@ -133,4 +133,4 @@ def NewPost():
     return render_template("npost.html", params=params)
 
 if __name__ == "__main__":
-    app.run(port=8000, debug=True)
+    app.run(port=8000, debug=False)
